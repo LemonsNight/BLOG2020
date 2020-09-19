@@ -1,0 +1,20 @@
+{
+	"request-state": "200",
+	"data" : 
+		{
+			"classly" : [
+				"HTML",
+				"CSS",
+				"JavaScript"
+			],
+			"tgas" : [
+				"HTML",
+				"CSS",
+				"JavaScript",
+				"Vue",
+				"jQuery",
+				"webpack"
+			]
+		}
+	
+}

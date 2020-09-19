@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0df226"],{"892a":function(a){a.exports=JSON.parse('{"request-state":"200","data":{"classly":["HTML","CSS","JavaScript"],"tgas":["HTML","CSS","JavaScript","Vue","jQuery","webpack"]}}')}}]);
+//# sourceMappingURL=chunk-2d0df226.6a97c6d1.js.map

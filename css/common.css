@@ -1,0 +1,82 @@
+a{
+	text-decoration: none;
+}
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	color: #000000;
+	/* font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif; */
+	box-sizing: border-box;
+	/* transition: all .6s; */
+}
+input,button,textarea{
+	/*outline:none;*/
+}
+ul{
+	list-style-type: none;
+}
+ol,ul{
+	list-style: none;
+}
+html {font-size: 100px;}
+button{
+	cursor: pointer;
+}
+body{
+	background-image: var(--bgimage);
+}
+:root{
+	--themetxt: rgb(0 3 15);
+	--themebackground: rgba(243, 156, 18,1.0);
+	--themetxthover: rgba(211, 84, 0,1.0);
+	--themebackgroundhover: rgba(243, 156, 18,1.0);
+	--bgimage: url(../img/bg.png);
+	
+	/* loading */
+	--loading-bg: #2c3e50;
+	--loading-h1:#f1c40f;
+	--loading-p:#2980b9;
+	--loading-li: #ecf0f1;
+	--loading-lishadow: 0 4px 12px 0 rgba(54,193,255,.1), 0 2px 20px 0 rgba(104,37,113,.5);
+	
+	/* About */
+	--about-bgcolor: rgba(255, 255, 255, 0.8);
+	--about-h2: #333;
+	--about-li:#6b757b;
+	--about-click:#2faee3;
+	--about-bgcolor2: rgba(255, 255, 255, 0.5);
+	--about-headerbg: #fff;
+	--about-headerh2: #666;
+	--about-section: #fff;
+	
+	/* Listone */
+	--listone-h2: #343a40;
+	--listone-color: #748594;
+	--listone-bg: rgba(0, 0, 0, 0.01);
+	--listone-span: #748594;
+	--listone-h3: #f1c40f;
+	--listone-dt:  #333;
+	--listone-dd: #808080;
+	--listone-h32: #3d464d;
+	
+	/* music */
+	--musicbg: rgba(0, 0, 0,.8);
+	--musicbgimg: url(../img/20208021.jpg);
+	--musicspan: rgba(210, 218, 226,1.0);
+	--musici: #000;
+	--musich2: rgba(210, 218, 226,1.0);
+	--musica: rgba(75, 207, 250,1.0);
+	--musicfooterbg: rgba(30, 39, 46,1.0);
+	--musiclyric: rgb(51 181 153);
+	--musicsildingbox: #0c1721;
+	--musicdraw: red;
+	--musicsilding: #fff;
+	--musiclist: rgba(45, 52, 54,1.0);
+	--musiclistbutton: rgba(99, 110, 114,1.0);
+	--musiclistbuttoncolor: rgba(223, 230, 233,1.0);
+	--musiclistbuttonpitch: rgba(214, 48, 49,1.0);
+	--musiclisti:rgba(241, 196, 15,1.0);
+	--musiclisth3: rgba(230, 126, 34,1.0);
+	--musiclistspan: rgba(243, 156, 18,1.0);
+}

@@ -1,0 +1,61 @@
+{
+    "data":[
+        {
+            "id":"0",
+            "title":"日常吐槽",
+            "time":"2020-7-5",
+			"brief":"这是一个简介",
+            "content":"过几天弄个音乐播放器好了~，我看看应该怎么弄，网易的nodeJS需要服务器，估计不太行，看看有没有什么办法弄个在线的,没有服务器还是挺多东西弄不了的，先把界面做好吧,网站还在建设中，所以功能不方便，不过文章是可以正常发布了。。。",
+            "imgurl":"https://uploadstatic.mihoyo.com/contentweb/20200709/2020070912220829234.png",
+            "author":"inory"
+        },
+        {
+            "title": "wangEditor",
+            "content": "<p>由于莫得后台服务器，所以打算直接弄个编辑器，然后生成txt或者json文件来复制，这样就方便挺多了，后期可能还会优化，个人推荐直接生成json文件，方便复制！！！哈哈哈。</p><p>贴上代码</p><pre><p>&lt;template&gt;<br>    &lt;div id=\"editor\"&gt;<br>        <br>       &lt;div ref=\"editorElem\"&gt;&lt;/div&gt;<br>       &lt;br&gt;<br>        &lt;div&gt;        <br>           &lt;input type=\"text\" ref=\"title\" placeholder=\"标题\"&gt;<br>           &lt;input type=\"text\" ref=\"time\" placeholder=\"时间\"&gt;<br>           &lt;input type=\"text\" ref=\"author\" placeholder=\"作者\"&gt;<br>           &lt;input type=\"text\" ref=\"id\" placeholder=\"ID\"&gt;<br>           &lt;input type=\"file\" ref=\"fileE\" multiple=\"multiple\" accept=\".png,.jpeg,.jpg\"&gt;<br>           &lt;button @click=\"jsonevent\"&gt;GO&lt;/button&gt;<br>       &lt;/div&gt;<br>       <br>    &lt;/div&gt;<br>&lt;/template&gt;<br>&lt;script&gt;<br>import E from \"wangeditor\";<br>export default {<br>    name:\"Editor\",<br>    data() {<br>        return {<br>            editorval:{<br>                title:\"\",   <br>                content:\"\", <br>                author:\"\",<br>                timer:\"\",<br>                id:\"\",<br>                imgurl:\"\"<br>            } <br>        }<br>    },<br>    mounted() {<br>        this.editor = new E(this.$refs.editorElem);// vue挂载完后,实例化对象绑定div<br>        this.editor.create();//创建编辑器<br>    },<br>    methods: {<br>        jsonevent(){<br>            this.editorval = {<br>                title:this.$refs.title.value,<br>                content:this.editor.$textElem[0].innerHTML,<br>                author:this.$refs.author.value||`inory`,<br>                time:this.$refs.time.value || this.gettime,<br>                id:this.$refs.id.value,<br>                imgurl:`data/${this.$refs.fileE.files[0].name}`<br>            }<br>            this.fsenvet()<br>        },<br>        fsenvet(){<br>            console.log()<br>            let FileSaver = require('./js/FileSaver.min.js'); <br>            let content = JSON.stringify(this.editorval);<br>            let blob = new Blob([content ], {type: \"text/plain;charset=utf-8\"}); <br>            console.log(FileSaver,content,blob)<br>            FileSaver.saveAs(blob, \"inory.json\");<br>        }<br>    },<br>    computed: {<br>        gettime: function(){<br>            let getnewtime = new Date();<br>            let gettimer  = `${getnewtime.getFullYear()}-${getnewtime.getMonth()+1}-${getnewtime.getDate()}`<br>            return gettimer<br>        }<br>    },<br>}<br>&lt;/script&gt;</p></pre><p>主要就是引入FileSaver.js</p><p>链接：https://www.kancloud.cn/wangfupeng/wangeditor3/332599​&nbsp;</p>",
+            "author": "inory",
+			"brief":"",
+            "time": "2020-07-07",
+            "id": "1",
+            "imgurl": "https://uploadstatic.mihoyo.com/contentweb/20191115/2019111515510150417.jpg"
+        },
+        {
+            "title": "关于我播放器的制作",
+            "content": "<p>最近仿照网易音乐播放器做了个界面，因为vue是数据驱动，所以我尽可能的没去用JS的原生去操作DOM，不过应该是基本都没用到，播放器还有很多功能没做，只是写了个界面和做了播放的基础功能（随机播放顺序播放这些），用了axios去请求的数据和audio的一些自带的属性，过几天完善下歌词滚动，然后整个迷你播放器，符合常规，其他功能日后完善，目前的想法是，把VUE的所有能用的东西全部写到做到博客里面，也就是DEMO=。=</p><p>播放器的使用方法就是点击右上角的按钮切换显示。</p><p>还有一点就是谷歌的浏览器不支持自带播放的功能，这是谷歌自己所设置的东西，原因是怕用户点开网站，突然冒出声音，吓到用户，所以做了人性化设置</p><p>其他浏览器还是可以的。</p>",
+            "author": "inory",
+			"brief":"",
+            "time": "2020-7-13",
+            "id": "2",
+            "imgurl": "https://uploadstatic.mihoyo.com/contentweb/20191129/2019112916313715808.jpg"
+        },
+		{
+		  "title": "ES/567书籍",
+		  "content": "<div><p><span style=\"font-weight: 700;\">在简书上看到一篇文章，看到这个电子书链接，挺不错的，推荐大家去学习，学完ES5,6,7之后我会深入算法，过去是我过于迷茫，不懂得如何学习，总以为能写几个小网站就很厉害了，其实不然，扎实的基础，会让你学习框架游刃有余，框架只是对基础经行封装，可读性更高，易上手，可能你会用，但是你并不知道他为什么这样用，等他下次框架更新，万一他把你最常用的东西去掉了，可能你又要花大量的时间去学习，所以，扎实的基础是非常必要的。这个博客网站以后也会重构代码，写的实在是太拉闸了，虽然看着还行，下面附上链接：</span></p><p><span style=\"font-weight: 700;\"><br></span></p><p><strong>ES5电子教程</strong></p>\n<blockquote>\n<p>中文版：<a href=\"https://link.jianshu.com?t=http://yanhaijing.com/es5/#58\" target=\"_blank\" rel=\"nofollow\">http://yanhaijing.com/es5/#58</a><br>\n英文版：<a href=\"https://link.jianshu.com?t=https://people-mozilla.org/~jorendorff/es5.1-final.html\" target=\"_blank\" rel=\"nofollow\">https://people-mozilla.org/~jorendorff/es5.1-final.html</a></p>\n</blockquote>\n<p><strong>ES6电子教程</strong></p>\n<blockquote>\n<p>中文版：<a href=\"https://link.jianshu.com?t=http://es6.ruanyifeng.com/\" target=\"_blank\" rel=\"nofollow\">http://es6.ruanyifeng.com/</a><br>\n英文版：<a href=\"https://link.jianshu.com?t=http://www.ecma-international.org/ecma-262/6.0/#sec-type\" target=\"_blank\" rel=\"nofollow\">http://www.ecma-international.org/ecma-262/6.0/#sec-type</a><br>\nES6的浏览器兼容性问题： <a href=\"https://link.jianshu.com?t=https://segmentfault.com/a/1190000005128101\" target=\"_blank\" rel=\"nofollow\">https://segmentfault.com/a/1190000005128101</a></p>\n</blockquote>\n<p><strong>ES7电子教程</strong></p>\n<blockquote>\n<p>英文版：<a href=\"https://link.jianshu.com?t=http://www.ecma-international.org/ecma-262/7.0/index.html\" target=\"_blank\" rel=\"nofollow\">http://www.ecma-international.org/ecma-262/7.0/index.html</a></p></blockquote></div><br><br>作者：lzyuan<br>链接：https://www.jianshu.com/p/e90c447aa645<br>来源：简书<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。",
+		  "author": "inory",
+		  "brief":"",
+		  "time": "2020-7-14",
+		  "id": "3",
+		  "imgurl": "https://uploadstatic.mihoyo.com/contentweb/20200313/2020031319071683018.jpg"
+		},
+        {
+        "title": "关于this的理解",
+        "content": "<p>关于this，下面有一段代码</p><pre><code>let obj, method;<br><br>obj = {<br>  go: function() { alert(this); }<br>};<br><br>obj.go();               // (1) [object Object]<br><br>(obj.go)();             // (2) [object Object]<br><br>(method = obj.go)();    // (3) undefined        <span style=\"font-family: Avenir, Helvetica, Arial, sans-serif;\">[object window]</span><br><br>(obj.go || obj.stop)(); // (4) undefined    <span style=\"background-color: rgba(255, 255, 255, 0.5); font-family: Avenir, Helvetica, Arial, sans-serif;\">[object window]</span></code></pre><p>仔细思考下，为什么最后一条代码，他的this指向了window?</p><p>你同时输出obj.go和obj.go||obj.stop，你会发现，他们输出的东西都是一样的，可是指向的却是两个方向，一个是obj本身，一个是window，那么为什么会造成这种结果呢？</p><p>你可以打开控制台，输出window，你会发现，window里面有一个方法叫做alert，你输出window.lert(xxx)和输出alert(xxx)，是一样的结果，alert() === window.alert()，也就是说，即使你不输出前面的window，他默认也会帮你加上去，那么问题就很简单了，如果是全局的方法，他会默认指向window。我们知道，this指向的是一个对象，没错，是一个对象，如果你不存在对象，那么他会默认指向window，我们前面的(obj.go || obj.stop)()，因为他在返回值的时候，虽然他返回了obj.go,但实际上obj.go只是返回，并没有调用this，是最后的window调用了这个函数，这么说应该理解了吧，this只会在调用那一刻生效，记住这条就行了=。=</p>",
+        "author": "inory",
+		"brief":"",
+        "time": "2020-7-16",
+        "id": "4",
+        "imgurl": "https://uploadstatic.mihoyo.com/contentweb/20200120/2020012014354871886.jpg"
+        },
+		{
+		  "content": "<p><br></p><p>功能</p><p>可以把图片截取成16：9的图片，然后下载出来</p><p><br></p><p>制作过程</p><p>主要就是把图片的位置按比例反馈给canvas的drawImage函数，然后进行裁剪，主要用到以下特性</p><p>1. 用到了鼠标对div的拖拽</p><p>2. 左右的对比反馈，数据双向绑定</p><p>3. canvas的drawImage</p><p>4. a标签的下载功能</p><p>5.其他都是附带的，编辑器用了本地缓存和数组的增删改查。</p><p><br></p><p>点击体验：http://localhost:8080/?#/resource</p><p><br></p><p><br></p><p><br></p><p><br></p>",
+		  "title": "图片截取组件",
+		  "brief": "一个用canvas制作的图片截取组件",
+		  "name": "Cloud",
+		  "imgurl": "https://uploadstatic.mihoyo.com/contentweb/20200120/2020012014354871886.jpg",
+		  "classly": "JavaScript",
+		  "tgas": [
+		    "图片上传"
+		  ],
+		  "time": "2020年09月01日"
+		}
+    ]
+}

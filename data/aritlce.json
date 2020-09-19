@@ -1,0 +1,96 @@
+{
+    "data":[
+        {
+			"id":"1",
+			"content": "<h2>简介</h2><p><span style=\"font-weight: normal;\">本博客是基于vue.js开发，由0开发，没有用其他主题进行二次开发，除了vue的基本组件，博客的功能都是自己实现的，没有用到插件，完成度50%，主要用于记录，后期会不断的开放功能。&nbsp;</span></p><div><span style=\"font-weight: normal;\"><br></span></div><h2>基本需求</h2><div>1. 前后端分离</div><p>2. 本地缓存主题切换</p><p>3. 兼容PC端的可视区域</p><p>4. 播放器</p><p>5. 响应式布局</p><p>6. 可缓存编辑器</p><p><br></p><h2><span style=\"font-weight: bold;\">最后的说明</span></h2><p>博客暂时没有什么好看的，可以当作一个网上播放器，用的网易api，有我的歌单和自定义搜索歌曲=。=，由于没有后台</p><p><br></p>",
+			"title": "关于该博客。",
+			"brief": "简单的说明该博客。",
+			"name": "inory",
+			"imgurl": "https://uploadstatic.mihoyo.com/contentweb/20200120/2020012014354871886.jpg",
+			"classly": "JavaScript",
+		  	"tgas": [
+			    "博客制作",
+			    "日常"
+			  ],
+			"time": "2020年08月27日"
+        },
+		{
+			"id":"2",
+			"content": "<p><br></p><p>最近不知道为何，Github的网站进不去了，但是其他网友却可以，具体为，官网进的去，但是*.github.io这些网址进不去。</p><p>在网上查询后，说是运营商有意为之，如果想要登陆，需要在hosts文件进行添加网址，不然就没办法了，或者使用代理。</p><p><br></p><p>这里说下hosts的方法：</p><p><br></p><p>1.首先进入<a href=\"http://tool.chinaz.com/dns\">http://tool.chinaz.com/dns</a>这个网址</p><p><br></p><p>2.输入打不开的网址，然后会得到响应ip<br></p><p><br></p><p>3.然后在电脑上找到C:\\Windows\\System32\\drivers\\etc 目录下的hosts，备份一份</p><p><br></p><p>4. 用记事本打开文件，在最后添加响应ip和你的网址，中间记得加个空格，这样子就能进去啦~</p><p><br></p><p>在最后，打算引入markdown编辑器，这个编辑器有点难用，对于博客而言，到时候做个编辑器切换。</p><p><br></p><p><br></p>",
+			"title": "Github无法访问",
+			"brief": "修改hosts文件即可。",
+			"name": "Cloud",
+			"imgurl": "https://uploadstatic.mihoyo.com/contentweb/20200120/2020012014354871886.jpg",
+			"classly": "JavaScript",
+			"tgas": [
+				"Github"
+			  ],
+			"time": "2020年08月31日"
+		},
+		{
+			"id":"3",
+			"content": "<p><br></p><p>功能</p><p>可以把图片截取成16：9的图片，然后下载出来</p><p><br></p><p>制作过程</p><p>主要就是把图片的位置按比例反馈给canvas的drawImage函数，然后进行裁剪，主要用到以下特性</p><p>1. 用到了鼠标对div的拖拽</p><p>2. 左右的对比反馈，数据双向绑定</p><p>3. canvas的drawImage</p><p>4. a标签的下载功能</p><p>5.其他都是附带的，编辑器用了本地缓存和数组的增删改查，</p><p><br></p><p><a href=\"http://localhost:8080/?#/resource\" target=\"_blank\">点击体验</a>：https://inoryenglish.github.io/BLOG2020/#/resource</p><p><br></p><p>最后，这几天开始找工作了，希望一帆风顺</p>",
+			"title": "图片截取组件",
+			"brief": "一个用canvas制作的图片截取组件",
+			"name": "Cloud",
+			"imgurl": "https://uploadstatic.mihoyo.com/contentweb/20200120/2020012014354871886.jpg",
+			"classly": "JavaScript",
+			"tgas": [
+				"图片上传"
+			  ],
+			  "time": "2020年09月01日"
+		},
+		{
+			"id": "4",
+			"content": "<p>最近做了个音乐播放器，目前DEMO有以下功能</p><p><br></p><p>播放模式的切换：</p><p>随机播放、列表循环、单曲播放（默认单曲播放，意思就是播放完之后自动暂停结束）、单曲循环</p><p><br></p><p>皮肤更换：</p><p>支持自定义颜色更换，点击右上角的按钮可以来回开启或者关闭主图界面，目前还没做那个点击其他区域关闭界面。将就着用吧，也不是难做，主要的功能还是音乐播放，打算等vue3出来之后重新做一个。</p><p><br></p><p>列表：</p><p>支持我自己的歌单，所有的歌曲均是网易提供的，并非本地</p><p><br></p><p>进度条：</p><p>能够自由的调节歌曲的播放点和音量</p><p><br></p><p>歌词滚动：</p><p>能够精确的定位歌词所在位置</p><p><br></p><p>其他功能暂时没开放</p><p><br></p><p>代码开放在github，喜欢的自己拿去</p>",
+			"title": "关于音乐播放器的制作",
+			"brief": "音乐播放器制作过程",
+			"name": "inory",
+			"imgurl": "https://uploadstatic.mihoyo.com/contentweb/20200120/2020012014354871886.jpg",
+			"classly": "HTML",
+			"tgas": [
+				"音乐播放器"
+			],
+			"time": "2020年09月02日"
+		},
+		{
+			"id": "5",
+			"content": "<p><br></p><p>fetch()方法是一种现代通用的方法，旧版本浏览器不支持，但是他在现代浏览器中支持挺好的。</p><p><br></p><h2><span style=\"font-weight: bold;\">基本语法</span></h2><p>let promise = fetch(url, options)</p><p>url: 访问的路径</p><p>options：可选参数：method，header等</p><p>如果没有options，那就是一个简单的get请求，下载url的内容，并返回promise。</p><p>如果fetch无法建立一个http请求，那么promise回返回404 500 ，不会导致出现error</p><p><br></p><h2>fetch的第二个参数</h2><p>那么什么时候用到第二个参数呢？</p><p>那就是我们post请求</p><p>要创建一个post请求，我们需要用到fetch的第二个参数options</p><p>method——http方法，例如post；</p><p>headers——具有 request header 的对象（不是所有 header 都是被允许的）</p><p>body——request body，其中之一：（要以&nbsp;<code>string</code>，<code>FormData</code>，<code>BufferSource</code>，<code>Blob</code>&nbsp;或&nbsp;<code>UrlSearchParams</code>&nbsp;对象的形式发送的数据（request body）。）</p><p>字符串（例如json）</p><p>ForData对象，以form/multipart形式发送数据</p><p>Blob/BufferSource&nbsp; &nbsp; 发送二进制数据</p><p>URLSearchParams，以x-www-form-urlencoded编码发送数据，很少使用</p><p><br></p><h2>响应属性</h2><p>response .status: 返回http状态码</p><p>response.ok： http 状态码 ==200-299 ，返回ture<br></p><p>response.headers:&nbsp; &nbsp;类似于map的带有http header的的对象</p><p><br></p><h2>获取response body的方法</h2><p>response.text()&nbsp;&nbsp;&nbsp;&nbsp;返回文本</p><p>response.json()&nbsp;&nbsp;&nbsp;&nbsp;将内容解析为json</p><p>response.fromData()&nbsp; &nbsp; 以FormData对象返回</p><p>response.blob()&nbsp; &nbsp; 返回二进制数据</p><p>response.arrayBuffer()&nbsp; &nbsp; 返回低级别的二进制数据</p><p>&nbsp;</p><h2>最后</h2><p>下篇文章以DEMO的形式发布上来。</p><p><br></p><p><br></p><p><br></p>",
+			"title": "网络请求",
+			"brief": "Fetch的用法",
+			"name": "inory",
+			"imgurl": "https://uploadstatic.mihoyo.com/contentweb/20200120/2020012014354871886.jpg",
+			"classly": "JavaScript",
+			"tgas": [
+				"Fetch"
+			],
+			"time": "2020年09月03日"
+		},
+		{
+			"id": "6",
+			"content": "<p>Infinity 是全局对象（global object）的一个属性，即它是一个全局变量。<br></p><p>Infinity 的初始值是 Number.POSITIVE_INFINITY。Infinity（正无穷大）大于任何值。</p><p>该值和数学意义上的无穷大很像，例如任何正值乘以 Infinity 为 Infinity, 任何数值除以 Infinity 为 0</p><p><br></p><p>Number.POSITIVE_INFINITY 属性表示正无穷大。<br></p><p>不必创建一个 Number 实例，可使用 Number.POSITIVE_INFINITY 来访问该静态属性。</p><p>Number.POSITIVE_INFINITY 的值同全局对象 Infinity 属性的值相同。</p><h2><span style=\"font-weight: bold;\">该值的表现同数学上的无穷大有点儿不同：</span></h2><p>1. 任何正值，包括 POSITIVE_INFINITY，乘以 POSITIVE_INFINITY 为 POSITIVE_INFINITY。<br>2. 任何负值，包括 NEGATIVE_INFINITY，乘以 POSITIVE_INFINITY 为 NEGATIVE_INFINITY。<br>3. 0 乘以 POSITIVE_INFINITY 为 NaN。<br>4 .NaN 乘以 POSITIVE_INFINITY 为 NaN。<br>5. POSITIVE_INFINITY 除以 NEGATIVE_INFINITY 以外的任何负值为 NEGATIVE_INFINITY。<br>6. POSITIVE_INFINITY 除以 POSITIVE_INFINITY 以外的任何正值为 POSITIVE_INFINITY。<br>7. POSITIVE_INFINITY 除以 NEGATIVE_INFINITY 或 POSITIVE_INFINITY 为 NaN。<br>8. 任何数除以 POSITIVE_INFINITY 为 0。</p><p>使用Number.POSITIVE_INFINITY属性来指示错误情况，如果成功，该错误情况将返回有限数目。</p><p><br></p><p>但是请注意，&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"font-weight: bold;\">isFinite</span>&nbsp; &nbsp; 在这种情况下这将更为合适。</p><p>isFinite 是全局的方法，不与任何对象有关系。</p><p>用这个方法来判定一个数字是否是有限数字。</p><p>isFinite 方法检测它参数的数值。</p><p>如果参数是 NaN，正无穷大或者负无穷大，会返回false，其他返回 true。</p><p>语法：isFInite(testValue)</p><p>&nbsp;testValue参数含义：用于检测有限性（finiteness）的值</p><pre><code>isFinite(Infinity);  // false<br>isFinite(NaN);       // false<br>isFinite(-Infinity); // false<br>isFinite(0);         // true<br>isFinite(2e64);      // true, 在更强壮的Number.isFinite(null)中将会得到false<br>isFinite(\"0\");       // true, 在更强壮的Number.isFinite('0')中将会得到false</code></pre><p>这里顺便说下<a id=\"user-content-multiply\" href=\"https://tc39.es/ecma262/#sec-numeric-types-number-multiply\" rel=\"nofollow\">Number::multiply( x, y ) 乘法</a>，以便于记忆</p><pre><code>0.1 * NaN // NaN<br>0.1 * 0.2 // 0.020000000000000004</code></pre><p>浮点数乘法的结果遵循 IEEE 754-2019 二进制双精度算法的规则：</p><p>1. 如果操作数有一个是 NaN，结果为 NaN<br>2. 如果两个操作数符号相同，那么其结果为正数，否则符号不同，结果为负数<br>3. 无穷大乘以零会得到 NaN<br>4. 无穷乘以无穷，结果也为无穷。符号由第2步规则决定<br>5. 无穷乘以有限非0数，结果为有符号的无穷。符号由第2步规则决定<br>6. 其他情况，既没有无穷也没有 NaN，使用 IEEE 754-2019 roundTiesToEven 模式计算乘积并将其舍入到最接近的可表示值。如果太大而无法表示，结果为正确符合的无穷。如果太小而无法表示，结果用正确符号的0表示。ECMAScript语言需要支持 IEEE 754-2019 定义的渐进式下溢。</p>",
+			"title": "Infinity的学习",
+			"brief": "Infinity的一些特性",
+			"name": "inory",
+			"imgurl": "https://uploadstatic.mihoyo.com/contentweb/20200120/2020012014354871886.jpg",
+			"classly": "JavaScript",
+			"tgas": [
+				"Infinity"
+			],
+			"time": "2020年09月04日"
+		},
+		{
+			"id": "7",
+			"content": "<p>通关群友的告知，Vuejs&nbsp;3.0&nbsp;在北京时间2020年9月19日凌晨，终于发布了&nbsp;3.0&nbsp;版本，代号：One&nbsp;Piece</p><p>看得出来作者好像是个2次元?啊这。。</p><p>博客重构开始啦，这个博客是基于2.0版本开发，所以vue如果更新，我们也要进一步发展。</p><p><br></p><p>说下博客制作思路吧，从原生js开发的普通html网页到vue的2.0，总共写了两次博客页面，感觉不太行！这次理下思路，重新构思下：</p><p>1.&nbsp; 数据配置1，所有的请求由js配置文件单独请求</p><p>2. css的可变，所有的颜色，以theme.css配置文件作为总的颜色调试</p><p>3. 博客的文章主题，这次采用md的格式，通过github上仓库动态获取文章，也就是说，你只需要在github上写好文章并保存，那么你的页面就会出现更新数据</p><p>4. 数据配置2，所有的可变数据，全部由js配置文件担任，不在vue文件里面写，单独的配置文件更容易维护</p><p>5. 这次采用ui库的形式来开发，不在自己造轮子，效率要快，毕竟vue3还在测试中，有些不稳定</p><p><br></p>",
+			"title": "Vue3.0",
+			"brief": "Vue3.0的想法",
+			"name": "inory",
+			"imgurl": "https://uploadstatic.mihoyo.com/contentweb/20200120/2020012014354871886.jpg",
+			"classly": "JavaScript",
+			"tgas": [
+				"vue3"
+			],
+			"time": "2020年09月20日"
+		}
+	]
+}
